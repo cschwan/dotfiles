@@ -3,7 +3,11 @@ execute pathogen#infect()
 
 set timeoutlen=1000 ttimeoutlen=0
 
-"set encoding=utf-8
+" don't add additional spaces after a sentence ends when joining lines
+set nojoinspaces
+
+" don't make backups
+set noswapfile
 
 " four spaces for indentation
 set tabstop=4
@@ -17,13 +21,22 @@ set number
 set incsearch
 set hlsearch
 
+" break text at 80 chars and highlight the boundary
 set textwidth=80
 set colorcolumn=81
-"set number
+
+" enable switching buffers without saving them first
+set hidden
+
+" use a 256 color terminal
 set t_Co=256
+
+" print line numbers and make margins symmetric
+set printoptions=left:5pc,number:y
 
 syntax enable
 set background=dark
+
 
 " enable italics
 "let g:gruvbox_italic=1
