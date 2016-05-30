@@ -1,0 +1,7 @@
+[user]
+	name = Christopher Schwan
+	email = handgranaten-herbert@posteo.de
+[color]
+	ui = auto
+[push]
+	default = simple

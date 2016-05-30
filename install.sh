@@ -7,6 +7,7 @@ dotfiles="$(pwd)"
 cd
 
 files=(
+	.gitconfig
 	.tmux.conf
 	.vim
 	.vimrc
