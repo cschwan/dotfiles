@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euf -o pipefail
+
 dotfiles="$(pwd)"
 
 cd
@@ -10,9 +12,26 @@ files=(
 	.vimrc
 )
 
+declare mode="${1:-install}"
+
 for i in "${files[@]}"; do
-	if [[ ! -f $i ]]; then
-		echo "installing $i"
-		ln -s "${dotfiles}"/"$i" ~/"$i"
-	fi
+	case "${mode}" in
+	install)
+		if [[ ! -e $i ]]; then
+			echo "installing $i"
+			ln -s "${dotfiles}"/"$i" ~/"$i"
+		fi
+		;;
+
+	remove)
+		if [[ -L $i ]]; then
+			echo "removing $i"
+			rm $i
+		fi
+		;;
+
+	*)
+		echo "unknown mode: ${mode}" && exit 1
+		;;
+	esac
 done
