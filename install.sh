@@ -8,6 +8,7 @@ cd
 
 files=(
 	.gitconfig
+	.hgrc
 	.tmux.conf
 	.vim
 	.vimrc
