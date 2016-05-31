@@ -3,5 +3,7 @@
 	email = handgranaten-herbert@posteo.de
 [color]
 	ui = auto
+[core]
+	pager = less -x1,5
 [push]
 	default = simple
