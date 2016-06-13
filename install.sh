@@ -7,6 +7,7 @@ dotfiles="$(pwd)"
 cd
 
 files=(
+	.gdbinit
 	.gitconfig
 	.hgrc
 	.tmux.conf
