@@ -10,6 +10,7 @@ files=(
 	.gdbinit
 	.gitconfig
 	.hgrc
+	.mutt
 	.tmux.conf
 	.vim
 	.vimrc

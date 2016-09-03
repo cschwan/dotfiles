@@ -1,0 +1,33 @@
+# view html mail using an external program (see mailcap_path)
+auto_view text/html
+
+# prefer plain text messages over html
+alternative_order text/plain text/enriched text/html
+
+set realname="Christopher Schwan"
+
+# cache message headers to speed things up
+set header_cache="/tmp/mutt-headers"
+
+# use vim text editor with format=flowed option
+set editor="vim -c 'set spell spelllang=en formatoptions+=aw'"
+set text_flowed=yes
+
+# sort by threads, then date
+set sort=threads
+set sort_aux=date-sent
+
+# configure index and pager
+set index_format="%4C %Z %{%b %d} %-40.40L %s"
+set pager_stop=yes
+set pager_index_lines=15
+
+# configure external programs to view mail content
+set mailcap_path="~/.mutt/mailcap"
+
+# configure aliases
+set alias_file="~/.mutt/aliases"
+set reverse_alias=yes
+source "$alias_file"
+
+source "~/.mutt/mailboxes"
