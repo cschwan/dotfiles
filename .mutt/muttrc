@@ -9,13 +9,16 @@ set realname="Christopher Schwan"
 # cache message headers to speed things up
 set header_cache="/tmp/mutt-headers"
 
+#
+set menu_scroll=yes
+
 # use vim text editor with format=flowed option
 set editor="vim -c 'set spell spelllang=en formatoptions+=aw'"
 set text_flowed=yes
 
-# sort by threads, then date
+# sort by threads, but sort threads by the latest message
 set sort=threads
-set sort_aux=date-sent
+set sort_aux=last-date-received
 
 # configure index and pager
 set index_format="%4C %Z %{%b %d} %-40.40L %s"
