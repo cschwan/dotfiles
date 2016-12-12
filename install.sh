@@ -7,6 +7,7 @@ dotfiles="$(pwd)"
 cd
 
 files=(
+	.config/git
 	.gdbinit
 	.gitconfig
 	.hgrc
@@ -23,6 +24,9 @@ for i in "${files[@]}"; do
 	install)
 		if [[ ! -e $i ]]; then
 			echo "installing $i"
+			if [[ ! -d "$(dirname $i)" ]]; then
+				mkdir -p "$(dirname $i)"
+			fi
 			ln -s "${dotfiles}"/"$i" ~/"$i"
 		fi
 		;;
