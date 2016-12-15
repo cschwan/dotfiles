@@ -9,10 +9,14 @@ set nojoinspaces
 " don't make backups
 set noswapfile
 
-" four spaces for indentation
+" a <Tab> character counts as four spaces
 set tabstop=4
+" four spaces for indentation
 set softtabstop=4
 set shiftwidth=4
+
+" convert <Tab> to spaces when entering it in insert mode
+set expandtab
 
 " display linenumbers
 set number
