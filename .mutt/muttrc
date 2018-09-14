@@ -1,6 +1,9 @@
 # view html mail using an external program (see mailcap_path)
 auto_view text/html
 
+# removes warnings
+set crypt_use_gpgme=no
+
 # prefer plain text messages over html
 alternative_order text/plain text/enriched text/html
 
@@ -9,16 +12,17 @@ set realname="Christopher Schwan"
 # cache message headers to speed things up
 set header_cache="/tmp/mutt-headers"
 
-#
+# change scrolling behavior
 set menu_scroll=yes
+
+set mime_forward=ask-no
 
 # use vim text editor with format=flowed option
 set editor="vim -c 'set spell spelllang=en formatoptions+=aw'"
 set text_flowed=yes
 
-# sort by threads, but sort threads by the latest message
-set sort=threads
-set sort_aux=last-date-received
+# sort by date
+set sort=last-date-received
 
 # configure index and pager
 set index_format="%4C %Z %{%b %d} %-40.40L %s"
