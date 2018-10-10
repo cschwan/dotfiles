@@ -25,9 +25,6 @@ set shiftwidth=4
 " highlight the boundary at 101 characters
 set colorcolumn=101
 
-" set the line width to be 100 characters, but don't wrap
-"set textwidth=100
-
 " convert <Tab> to spaces when entering it in insert mode
 set expandtab
 
@@ -87,6 +84,10 @@ autocmd FileType help wincmd L
 
 " remove trailing spaces
 autocmd FileType c,cpp,fortran autocmd BufWritePre <buffer> %s/\s\+$//e
+
+" wrap comments and text when explicitly requested at 100 characters
+" join comments without the second comment marker
+autocmd FileType c,cpp,fortran set textwidth=100 formatoptions=cjq
 
 " use free form Fortran for f90 files
 "autocmd FileType *.f90 :let fortran_free_source=1
