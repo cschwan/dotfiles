@@ -96,4 +96,4 @@ autocmd FileType c,cpp,fortran set textwidth=100 formatoptions=cjq
 autocmd Filetype c,cpp set comments^=:///
 
 " use `latexmk` to make tex documents
-autocmd FileType tex setlocal makeprg=latexmk\ -pdf
+autocmd FileType tex setlocal makeprg=latexmk\ -pdf\ -shell-escape
