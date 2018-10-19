@@ -37,4 +37,18 @@ set alias_file="~/.mutt/aliases"
 set reverse_alias=yes
 source "$alias_file"
 
+# check for mail every 60 seconds
+set mail_check=60
+set timeout=10
+
+set imap_check_subscribed
+set imap_idle=yes
+set ssl_force_tls=yes
+
+set sidebar_visible=yes
+set sidebar_width=40
+set sidebar_on_right=yes
+
+account-hook . 'unset imap_user; unset imap_pass; unset tunnel'
+
 source "~/.mutt/mailboxes"
