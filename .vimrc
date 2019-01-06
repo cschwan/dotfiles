@@ -1,6 +1,13 @@
 " enable pathogen
 execute pathogen#infect()
 
+" helps set the right (true)colors if vim is started under tmux
+set t_8f=[38;2;%lu;%lu;%lum
+set t_8b=[48;2;%lu;%lu;%lum
+
+" use truecolor (24-bit)
+set termguicolors
+
 set lazyredraw
 
 set nocompatible
@@ -36,9 +43,6 @@ set incsearch
 
 " highlight searches
 set hlsearch
-
-" use a 256 color terminal
-set t_Co=256
 
 " print line numbers and make margins symmetric
 set printoptions=left:5pc,right:6pc,number:y
