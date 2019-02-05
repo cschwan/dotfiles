@@ -9,8 +9,9 @@ alternative_order text/plain text/enriched text/html
 
 set realname="Christopher Schwan"
 
-# cache message headers to speed things up
-set header_cache="/tmp/mutt-headers"
+# cache message headers and bodies to speed things up
+set header_cache="~/.mutt/cache/"
+set message_cachedir="~/.mutt/cache/"
 
 # change scrolling behavior
 set menu_scroll=yes
