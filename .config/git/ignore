@@ -1,3 +1,2 @@
-build-clang*/
-build-gcc*/
-build-git-gcc*/
+build-debug-*/
+build-release-*/
