@@ -7,6 +7,7 @@ dotfiles="$(pwd)"
 cd
 
 files=(
+	.bazaar
 	.config/git
 	.gdbinit
 	.gitconfig
