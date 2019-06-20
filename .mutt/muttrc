@@ -19,8 +19,10 @@ set menu_scroll=yes
 set mime_forward=ask-no
 
 # use vim text editor with format=flowed option
-set editor="vim -c 'set spell spelllang=en formatoptions+=aw'"
+set editor="vim -c 'set spell spelllang=en_gb formatoptions+=aw | normal }'"
 set text_flowed=yes
+
+set edit_headers=yes
 
 # sort by date
 set sort=last-date-received
