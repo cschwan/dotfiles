@@ -1,6 +1,8 @@
 " enable pathogen
 execute pathogen#infect()
 
+let g:makeshift_use_pwd_first=1
+
 " helps set the right (true)colors if vim is started under tmux
 set t_8f=[38;2;%lu;%lu;%lum
 set t_8b=[48;2;%lu;%lu;%lum
@@ -68,9 +70,6 @@ let g:airline#extensions#tabline#enabled=1
 set listchars=trail:·,tab:\ \ 
 set list
 
-" use ninja to build programs
-set makeprg=ninja
-
 " don't use cursor keys in normal mode
 inoremap <Up>     <NOP>
 inoremap <Down>   <NOP>
@@ -98,6 +97,3 @@ autocmd FileType c,cpp,fortran set textwidth=100 formatoptions=cjq
 
 " recognize triple slash comments
 autocmd Filetype c,cpp set comments^=:///
-
-" use `latexmk` to make tex documents
-autocmd FileType tex setlocal makeprg=latexmk\ -pdf\ -shell-escape
