@@ -7,6 +7,9 @@ let g:makeshift_use_pwd_first=1
 set t_8f=[38;2;%lu;%lu;%lum
 set t_8b=[48;2;%lu;%lu;%lum
 
+" fixes vim not displaying underlined spell mistakes
+set t_Cs=
+
 " use truecolor (24-bit)
 set termguicolors
 
@@ -49,6 +52,9 @@ set hlsearch
 " print line numbers and make margins symmetric
 set printoptions=left:5pc,right:6pc,number:y
 
+" don't fold
+set nofoldenable
+
 syntax enable
 set background=dark
 
@@ -82,11 +88,13 @@ noremap  <Right>  <NOP>
 
 " filetype specific behavior
 
+au FileType gitcommit,gitrebase set viminfo="NONE"
+
 " open help buffers as a vertical split
 autocmd FileType help wincmd L
 
 " remove trailing spaces
-autocmd FileType c,cpp,fortran autocmd BufWritePre <buffer> %s/\s\+$//e
+"autocmd FileType c,cpp,fortran autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " wrap comments and text when explicitly requested at 100 characters
 " join comments without the second comment marker
