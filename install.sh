@@ -7,6 +7,8 @@ dotfiles="$(pwd)"
 cd
 
 files=(
+    .bash_profile
+    .bashrc
     .bazaar
     .config/git
     .gdbinit
