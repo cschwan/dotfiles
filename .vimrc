@@ -11,7 +11,9 @@ set t_8b=[48;2;%lu;%lu;%lum
 set t_Cs=
 
 " use truecolor (24-bit)
-set termguicolors
+if exists('+termguicolors')
+    set termguicolors
+endif
 
 set lazyredraw
 
