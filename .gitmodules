@@ -7,3 +7,6 @@
 [submodule ".vim/bundle/vim-makeshift"]
 	path = .vim/bundle/vim-makeshift
 	url = https://github.com/vim-makeshift.git
+[submodule "tmux-resurrect"]
+	path = tmux-resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect
