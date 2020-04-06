@@ -17,3 +17,12 @@ stty -ixon
 
 # older shells don't understand `tmux-256color`
 alias ssh="TERM=screen-256color ssh"
+
+# always use vim
+alias vi=vim
+
+# use colour when possible
+alias ls="ls --color=auto"
+alias grep="grep --color=auto"
+
+PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] "
