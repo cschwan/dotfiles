@@ -16,7 +16,7 @@ shopt -s histappend
 stty -ixon
 
 # older shells don't understand `tmux-256color`
-alias ssh="TERM=screen-256color ssh"
+#alias ssh="TERM=screen-256color ssh"
 
 # always use vim
 alias vi=vim
