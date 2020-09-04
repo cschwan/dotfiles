@@ -5,6 +5,7 @@
 	ui = auto
 [push]
 	default = simple
+	followTags = true
 [pull]
 	ff = only
 [diff]
