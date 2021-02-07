@@ -74,6 +74,9 @@ set noshowmode
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 
+" after saving, automatically format Rust code
+let g:rustfmt_autosave=1
+
 " highlight trailing space but dont highlight tabs
 set listchars=trail:·,tab:\ \ 
 set list
