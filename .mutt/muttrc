@@ -54,7 +54,6 @@ set ssl_force_tls=yes
 
 set sidebar_visible=yes
 set sidebar_width=40
-set sidebar_on_right=yes
 
 set print_command='set -e; muttprint -P A4 -p TO_FILE:"muttprint.ps"'
 
@@ -64,3 +63,5 @@ unignore from subject to cc date x-mailer x-url user-agent
 account-hook . 'unset imap_user; unset imap_pass; unset tunnel'
 
 source "~/.mutt/mailboxes"
+
+bind index,pager B sidebar-toggle-visible
