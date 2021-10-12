@@ -58,6 +58,8 @@ set printoptions=left:5pc,right:6pc,number:y
 set nofoldenable
 
 syntax enable
+filetype plugin indent on
+
 set background=dark
 
 " enable italics
