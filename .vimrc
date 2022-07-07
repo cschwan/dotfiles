@@ -112,3 +112,6 @@ autocmd FileType c,cpp,fortran set textwidth=100 formatoptions=cjq
 
 " recognize triple slash comments
 autocmd Filetype c,cpp set comments^=:///
+
+" disable indentation for LaTeX
+autocmd FileType plaintex,tex,context setlocal indentexpr=
