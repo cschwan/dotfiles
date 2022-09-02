@@ -17,5 +17,8 @@
 	process = git-lfs filter-process
 [commit]
 	verbose = true
+	gpgsign = true
 [merge]
 	conflictstyle = diff3
+[gpg]
+	program = gpg
