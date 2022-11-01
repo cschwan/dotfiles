@@ -59,6 +59,9 @@ set printoptions=left:5pc,right:6pc,number:y
 " don't fold
 set nofoldenable
 
+" use BE for the spell checker
+set spelllang=en_gb
+
 syntax enable
 filetype plugin indent on
 
@@ -96,6 +99,9 @@ noremap  <Left>   <NOP>
 noremap  <Right>  <NOP>
 
 " filetype specific behavior
+
+" enable the spell checker for Latex files
+autocmd FileType markdown,tex set spell
 
 au FileType gitcommit,gitrebase set viminfo="NONE"
 
