@@ -100,6 +100,9 @@ noremap  <Right>  <NOP>
 
 " filetype specific behavior
 
+" assume *.tex files contain Latex
+let g:tex_flavor = "latex"
+
 " enable the spell checker for Latex files
 autocmd FileType markdown,tex set spell
 
