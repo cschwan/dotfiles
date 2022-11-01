@@ -106,6 +106,7 @@ let g:tex_flavor = "latex"
 " enable the spell checker for Latex files
 autocmd FileType markdown,tex set spell
 
+" don't remember the changes written to git commit and rebase logs
 au FileType gitcommit,gitrebase set viminfo="NONE"
 
 " open help buffers as a vertical split
