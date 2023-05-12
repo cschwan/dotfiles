@@ -11,6 +11,8 @@ files=(
     .bashrc
     .bazaar
     .config/git
+    # disallow Python to access the system's keyring, which might not exist
+    .config/python_keyring/keyringrc.cfg
     .gdbinit
     .gitconfig
     .hgrc
