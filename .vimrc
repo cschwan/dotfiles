@@ -30,6 +30,8 @@ set nojoinspaces
 " don't make backups
 set noswapfile
 
+set scrolloff=5
+
 " a <Tab> character counts as four spaces
 set tabstop=4
 " four spaces for indentation
