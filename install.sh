@@ -15,6 +15,7 @@ files=(
     .config/python_keyring/keyringrc.cfg
     .gdbinit
     .gitconfig
+    .gnupg/gpg.conf
     .hgrc
     .mutt
     .tmux.conf
