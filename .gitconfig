@@ -3,8 +3,6 @@
     email = handgranaten-herbert@posteo.de
 [branch]
     sort = -committerdate
-[color]
-    ui = auto
 [push]
     autoSetupRemote = true
     default = simple
