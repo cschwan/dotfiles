@@ -1,24 +1,24 @@
 [user]
-	name = Christopher Schwan
-	email = handgranaten-herbert@posteo.de
+    name = Christopher Schwan
+    email = handgranaten-herbert@posteo.de
 [color]
-	ui = auto
+    ui = auto
 [push]
-	default = simple
-	followTags = true
+    default = simple
+    followTags = true
 [pull]
-	ff = only
+    ff = only
 [diff]
-	algorithm = histogram
+    algorithm = histogram
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
 [commit]
-	verbose = true
-	gpgsign = true
+    verbose = true
+    gpgsign = true
 [merge]
-	conflictstyle = diff3
+    conflictstyle = diff3
 [gpg]
-	program = gpg
+    program = gpg
