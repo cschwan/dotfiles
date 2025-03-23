@@ -1,15 +1,25 @@
 [user]
     name = Christopher Schwan
     email = handgranaten-herbert@posteo.de
+[branch]
+    sort = -committerdate
 [color]
     ui = auto
 [push]
+    autoSetupRemote = true
     default = simple
     followTags = true
 [pull]
     ff = only
 [diff]
     algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
+[fetch]
+    all = true
+    prune = true
+    pruneTags = true
 [filter "lfs"]
     required = true
     clean = git-lfs clean -- %f
@@ -19,6 +29,10 @@
     verbose = true
     gpgsign = true
 [merge]
-    conflictstyle = diff3
+    conflictstyle = zdiff3
 [gpg]
     program = gpg
+[init]
+    defaultBranch = main
+[tag]
+    sort = version:refname
